@@ -103,7 +103,25 @@ def lire_grille(texte):
     return grille
 
 def compter_voisins(grille, ligne, colonne, periodique):
-    raise NotImplementedError("P3 : compter_voisins")
+    if not grille or not grille[0]:
+        return 0
+
+    nb_lignes = len(grille)
+    nb_colonnes = len(grille[0])
+    total = 0
+
+    for decalage_ligne in (-1, 0, 1):
+        for decalage_colonne in (-1, 0, 1):
+            if decalage_ligne == 0 and decalage_colonne == 0:
+                continue
+
+            ligne_voisin = ligne + decalage_ligne
+            colonne_voisin = colonne + decalage_colonne
+
+            if grille[ligne_voisin][colonne_voisin] == 1:
+                total += 1
+
+    return total
 
 
 def generation_suivante(grille, periodique):
