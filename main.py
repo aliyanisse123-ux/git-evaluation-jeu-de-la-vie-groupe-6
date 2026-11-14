@@ -118,6 +118,12 @@ def compter_voisins(grille, ligne, colonne, periodique):
             ligne_voisin = ligne + decalage_ligne
             colonne_voisin = colonne + decalage_colonne
 
+            if periodique == True:
+                ligne_voisin %= nb_lignes
+                colonne_voisin %= nb_colonnes
+            elif not (0 <= ligne_voisin < nb_lignes and 0 <= colonne_voisin < nb_colonnes):
+                continue
+
             if grille[ligne_voisin][colonne_voisin] == 1:
                 total += 1
 
