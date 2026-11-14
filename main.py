@@ -131,7 +131,21 @@ def compter_voisins(grille, ligne, colonne, periodique):
 
 
 def generation_suivante(grille, periodique):
-    raise NotImplementedError("P3 : generation_suivante")
+    """Renvoie la génération suivante dans une nouvelle grille.
+
+    La grille reçue n'est pas modifiée pendant le calcul.
+    """
+    taille = len(grille)
+    nouvelle = []
+    for ligne in range(taille):
+        rangee = []
+        for colonne in range(taille):
+            voisines = compter_voisins(grille, ligne, colonne, periodique)
+            vivante = grille[ligne][colonne] == 1
+            # Naissance à 3 voisines, survie à 2 ou 3, sinon morte.
+            rangee.append(1 if voisines == 3 or (vivante and voisines == 2) else 0)
+        nouvelle.append(rangee)
+    return nouvelle
 
 
 def afficher_grille(grille, iteration):
