@@ -5,3 +5,7 @@ outputs/*
 !outputs/.keep
 
 # frozar_main.py
+
+# vidéos
+*.mp4
+gource.ppm
