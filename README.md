@@ -45,7 +45,7 @@ sh check_tests.sh
 
 ### Simulation du jeu de la vie
 
-Vidéo : <lien YouTube public de la simulation>
+Vidéo : [Jeu de la vie - groupe 6 Simulation (graine 4200)](https://www.youtube.com/watch?v=0aRKN1OIuTI)
 
 Grille de 50 cellules par côté, graine 4200, limites fixes, 2001 générations assemblées à 20 images par seconde (100 secondes). Commandes exactes, depuis la racine du dépôt :
 
