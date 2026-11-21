@@ -128,5 +128,6 @@ La génération initiale porte le numéro 0 : `-m 20` produit 21 générations. 
 ## Auteurs
 
 - Virapin Dhiessene 45006136
+- Maillot Maenice 46008293
 
 ## Liens utiles
