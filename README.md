@@ -75,5 +75,6 @@ ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i - \
 ## Auteurs
 
 - Virapin Dhiessene 45006136
+- Razakamanantsoa Tony 45002597
 
 ## Liens utiles
