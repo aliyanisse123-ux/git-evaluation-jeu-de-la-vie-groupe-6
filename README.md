@@ -43,8 +43,38 @@ sh check_tests.sh
 
 ## Vidéos
 
+### Simulation du jeu de la vie
+
+Vidéo : [Jeu de la vie - groupe 6 Simulation (graine 4200)](https://www.youtube.com/watch?v=0aRKN1OIuTI)
+
+Grille de 50 cellules par côté, graine 4200, limites fixes, 2001 générations assemblées à 20 images par seconde (100 secondes). Commandes exactes, depuis la racine du dépôt :
+
+```bash
+mkdir -p outputs/video-seed-4200
+python3 main.py --nb_cells 50 --max_iterations 2000 --seed 4200 \
+  --output_type image --output_directory outputs/video-seed-4200
+ffmpeg -y -framerate 20 -start_number 0 \
+  -i outputs/video-seed-4200/grid_%04d.png -frames:v 2001 \
+  -c:v libx264 -pix_fmt yuv420p -movflags +faststart \
+  outputs/video-seed-4200/game-of-life-g6.mp4
+```
+
+### Historique du dépôt (Gource)
+
+Vidéo : <lien YouTube public de la vidéo Gource>
+
+```bash
+gource -s 2 -r 60 --file-font-size 8 \
+  --title 'Jeu de la vie' --filename-time 2 \
+  --stop-at-end --hide date,usernames -o - | \
+ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i - \
+  -vcodec libx264 -preset medium -pix_fmt yuv420p \
+  -crf 18 -threads 0 -bf 0 gource.mp4
+```
+
 ## Auteurs
 
 - Virapin Dhiessene 45006136
+- Razakamanantsoa Tony 45002597
 
 ## Liens utiles
