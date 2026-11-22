@@ -173,3 +173,9 @@ ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i - \
 - [Documentation GitHub Actions](https://docs.github.com/en/actions) : intégration continue,
 - [Documentation ffmpeg](https://ffmpeg.org/documentation.html) : assemblage de la vidéo,
 - [Site officiel de Gource](https://gource.io/) : vidéo de l'historique du dépôt.
+
+## Intégration continue
+
+Un workflow GitHub Actions (`.github/workflows/tests.yml`) lance `check_script_options.sh` et `check_tests.sh` à chaque push et à chaque Pull Request.
+
+Exécution réussie : https://github.com/aliyanisse123-ux/git-evaluation-jeu-de-la-vie_groupe-6/actions/runs/44884739286
