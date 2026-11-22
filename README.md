@@ -143,7 +143,7 @@ ffmpeg -y -framerate 20 -start_number 0 \
 
 ### Historique du dépôt (Gource)
 
-Vidéo : <lien YouTube public de la vidéo Gource>
+Vidéo : [Jeu de la vie - groupe 6 Historique du dépôt (Gource)](https://youtu.be/VYBITZbfA48)
 
 ```bash
 gource -s 2 -r 60 --file-font-size 8 \
