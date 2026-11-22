@@ -159,5 +159,6 @@ ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i - \
 - Virapin Dhiessene 45006136
 - Maillot Maenice 46008293
 - Razakamanantsoa Tony 45002597
+- Robert Erwan 45006310
 
 ## Liens utiles
