@@ -160,6 +160,7 @@ ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i - \
 - Maillot Maenice 46008293
 - Razakamanantsoa Tony 45002597
 - Robert Erwan 45006310
+- ALI Yanisse 44005270
 
 ## Liens utiles
 
