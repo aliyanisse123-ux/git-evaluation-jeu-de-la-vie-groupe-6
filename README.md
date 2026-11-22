@@ -162,3 +162,14 @@ ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i - \
 - Robert Erwan 45006310
 
 ## Liens utiles
+
+- [Consigne du projet](https://github.com/frozar/git-evaluation-jeu-de-la-vie) : sujet, scénarios et barème,
+- [Workshop 3 : rebase et historique final](https://github.com/frozar/git-workshop-3) : organisation Git attendue,
+- [Jeu de la vie](https://fr.wikipedia.org/wiki/Jeu_de_la_vie) : règles du jeu de Conway,
+- [Documentation argparse](https://docs.python.org/fr/3/library/argparse.html) : lecture des options du programme,
+- [Documentation random](https://docs.python.org/fr/3/library/random.html) : grilles aléatoires reproductibles,
+- [Bien nommer ses commits](https://buzut.net/cours/versioning-avec-git/bien-nommer-ses-commits) : format des messages de commit,
+- [Documentation officielle de git rebase](https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Rebaser-Rebasing) : mise à jour d'une branche,
+- [Documentation GitHub Actions](https://docs.github.com/en/actions) : intégration continue,
+- [Documentation ffmpeg](https://ffmpeg.org/documentation.html) : assemblage de la vidéo,
+- [Site officiel de Gource](https://gource.io/) : vidéo de l'historique du dépôt.
